@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抽選アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-container">
+            <h2 class="subtitle">昭島国際法務PFI忘年会</h2>
+            <h1 class="main-title">景品抽選番号</h1>
+        </div>
+        
+        <!-- 数字が表示されるメインエリア -->
+        <div class="lottery-stage">
+            <div class="animation-container">
+                <div class="number-display" id="numberDisplay">?</div>
+            </div>
+        </div>
+        
+        <!-- 操作方法の説明 -->
+        <div class="instruction">
+            <p>Enterキーを押して抽選スタート</p>
+        </div>
+        
+        <!-- 既に出た数字の履歴エリア -->
+        <div class="history-container">
+            <h2>抽選履歴</h2>
+            <div class="number-history" id="numberHistory"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
