@@ -345,6 +345,202 @@ body {
     }
 }
 
+/* 5. 金色キラキラアニメーション */
+.golden-animation {
+    animation: 
+        golden 3.5s ease-in-out,
+        pulse3D 1.5s infinite alternate;
+}
+
+@keyframes golden {
+    0% {
+        transform: scale(0.5) rotateY(0deg);
+        background: radial-gradient(circle, #331a00 0%, #1a1a1a 100%);
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    }
+    30% {
+        transform: scale(1.5) rotateY(180deg);
+        background: radial-gradient(circle, #664d00 0%, #1a1a1a 100%);
+        box-shadow: 0 0 40px rgba(255, 215, 0, 0.5);
+    }
+    60% {
+        transform: scale(1.2) rotateY(360deg);
+        background: radial-gradient(circle, #997300 0%, #1a1a1a 100%);
+        box-shadow: 0 0 60px rgba(255, 215, 0, 0.7);
+    }
+    90% {
+        transform: scale(1.1) rotateY(540deg);
+        background: radial-gradient(circle, #cc9900 0%, #1a1a1a 100%);
+        box-shadow: 0 0 80px rgba(255, 215, 0, 0.9);
+    }
+    100% {
+        transform: scale(1) rotateY(720deg);
+        background: radial-gradient(circle, #ffd700 0%, #1a1a1a 100%);
+        box-shadow: 0 0 100px rgba(255, 215, 0, 1);
+    }
+}
+
+@keyframes pulse3D {
+    0% {
+        text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+        color: #ffcc00;
+        transform: translateZ(0);
+    }
+    100% {
+        text-shadow: 0 0 30px rgba(255, 215, 0, 1);
+        color: #ffe680;
+        transform: translateZ(50px);
+    }
+}
+
+/* 6. 虹色トランジションアニメーション */
+.rainbow-animation {
+    animation: 
+        rainbow 4.5s ease-in-out,
+        rainbowGlow 2s infinite alternate;
+}
+
+@keyframes rainbow {
+    0% {
+        transform: scale(0.5) rotate(0deg);
+        opacity: 0.5;
+        filter: hue-rotate(0deg);
+    }
+    20% {
+        transform: scale(1.2) rotate(72deg);
+        opacity: 0.8;
+        filter: hue-rotate(72deg);
+    }
+    40% {
+        transform: scale(1.4) rotate(144deg);
+        opacity: 1;
+        filter: hue-rotate(144deg);
+    }
+    60% {
+        transform: scale(1.6) rotate(216deg);
+        opacity: 1;
+        filter: hue-rotate(216deg);
+    }
+    80% {
+        transform: scale(1.3) rotate(288deg);
+        opacity: 0.9;
+        filter: hue-rotate(288deg);
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes rainbowGlow {
+    0% {
+        box-shadow: 0 0 30px rgba(255, 0, 0, 0.8);
+        color: #ff3333;
+    }
+    25% {
+        box-shadow: 0 0 30px rgba(255, 165, 0, 0.8);
+        color: #ffcc00;
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(0, 255, 0, 0.8);
+        color: #33ff33;
+    }
+    75% {
+        box-shadow: 0 0 30px rgba(0, 0, 255, 0.8);
+        color: #3333ff;
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(128, 0, 128, 0.8);
+        color: #cc33ff;
+    }
+}
+
+/* 7. バウンスアニメーション */
+.bounce-animation {
+    animation: bounce 3.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-300px) scale(0.5);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(30px) scale(1.2);
+        opacity: 1;
+    }
+    40% {
+        transform: translateY(-15px) scale(1.1);
+    }
+    50% {
+        transform: translateY(15px) scale(1);
+    }
+    60% {
+        transform: translateY(-8px) scale(1);
+    }
+    70% {
+        transform: translateY(8px) scale(1);
+    }
+    80% {
+        transform: translateY(-4px) scale(1);
+    }
+    90% {
+        transform: translateY(4px) scale(1);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* 8. 稲妻エフェクトアニメーション */
+.lightning-animation {
+    animation: lightningPulse 3.8s ease-in-out;
+}
+
+@keyframes lightningPulse {
+    0% {
+        transform: scale(0.7);
+        opacity: 0.7;
+        box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+    }
+    10% {
+        transform: scale(1.3);
+        opacity: 1;
+        box-shadow: 0 0 50px rgba(0, 255, 255, 0.9);
+    }
+    12% {
+        transform: scale(1.2);
+        opacity: 0.8;
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+    }
+    15% {
+        transform: scale(1.4);
+        opacity: 1;
+        box-shadow: 0 0 70px rgba(0, 255, 255, 1);
+    }
+    20% {
+        transform: scale(1.1);
+        opacity: 0.9;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    }
+    25% {
+        transform: scale(1.3);
+        opacity: 1;
+        box-shadow: 0 0 60px rgba(0, 255, 255, 0.8);
+    }
+    40% {
+        transform: scale(1.1);
+        opacity: 0.9;
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    }
+}
+
 /* 準備中の点滅アニメーション（強化版） */
 .blink-animation {
     animation: blinkEnhanced 0.5s linear infinite;
